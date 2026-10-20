@@ -157,4 +157,3 @@ cd frontend && npm run build         # -> frontend/dist/
 ```
 
 On Windows, use `mvnw.cmd clean package` for the backend.
-# spring-boot-sample-full-stack
