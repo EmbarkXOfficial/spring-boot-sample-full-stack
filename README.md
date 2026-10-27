@@ -51,6 +51,17 @@ npm run dev
 
 Open http://localhost:5173. The Vite dev server proxies `/api` to the backend on port 8080.
 
+## Run with Docker
+
+```bash
+cp .env.example .env      # then edit the values
+docker compose up -d --build
+```
+
+Open http://localhost. After changing `.env`, run `docker compose up -d` again to apply it (`docker compose restart` does **not** pick up changes). Stop everything with `docker compose down`.
+
+The Nginx config used in production is in [`frontend/nginx.conf`](frontend/nginx.conf).
+
 ## Endpoints
 
 | Endpoint               | Description                                |
